@@ -2,7 +2,8 @@ import type { ValidationResult } from '../types/barcode';
 
 // 위치바코드 패턴: 영문자/숫자로 이루어진 세그먼트가 -(dash)로 2개 이상 연결된 형태
 // 예) 3018-32L30-60-301
-const LOCATION_BARCODE_PATTERN = /^[0-9A-Za-z]+(-[0-9A-Za-z]+)+$/;
+// 위치바코드 패턴: 입력 중간 상태(dash로 끝남)도 허용
+const LOCATION_BARCODE_PATTERN = /^[0-9A-Za-z]+(-[0-9A-Za-z]*)*$/;
 
 // 일반 바코드 패턴: 숫자 또는 영문+숫자 조합 (dash 없음)
 const GENERAL_BARCODE_PATTERN = /^[0-9A-Za-z]+$/;
