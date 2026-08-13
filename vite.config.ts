@@ -1,7 +1,34 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite';
+import { VitePWA } from 'vite-plugin-pwa';
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['apple-touch-icon.png'],
+      manifest: {
+        name: '바코드/QR코드 생성기',
+        short_name: '바코드생성기',
+        description: '숫자/영문 바코드 및 위치바코드, QR코드 생성 도구',
+        theme_color: '#0f2540',
+        background_color: '#ffffff',
+        display: 'standalone',
+        start_url: '/',
+        icons: [
+          {
+            src: 'icon-192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'icon-512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    }),
+  ],
+});
