@@ -6,14 +6,9 @@ html,
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  overflow-x: hidden;
   background-color: #ffffff;
-  color-scheme: light;
 }
-#root {
-  width: 100%;
-}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -64,7 +59,7 @@ body {
   }
 }
 
-#root {
+/* #root {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
@@ -74,7 +69,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-}
+} */
 
 body {
   margin: 0;
