@@ -13,7 +13,7 @@ export default function App() {
   const validation = validateInput(value);
 
   return (
-    <div style={{ maxWidth: 400, margin: '40px auto', padding: 16 }}>
+    <div style={{ width: 380, margin: '40px auto', padding: 16 }}>
       <h1 style={{ fontSize: 20, marginBottom: 16 }}>바코드 / QR코드 생성기</h1>
 
       <BarcodeInput

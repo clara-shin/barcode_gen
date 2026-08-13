@@ -22,8 +22,12 @@ export default function BarcodeDisplay({ value }: BarcodeDisplayProps) {
   if (!value) return null;
 
   return (
-    <div>
-      <svg ref={svgRef} />
+    <div style={{ margin: '0 auto' }}>
+      <svg
+        ref={svgRef}
+        style={{ width: '100%', height: 80, display: 'block' }}
+        preserveAspectRatio='none'
+      />
       <p style={{ textAlign: 'center', marginTop: 4 }}>{value}</p>
     </div>
   );
