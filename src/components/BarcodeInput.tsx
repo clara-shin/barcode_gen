@@ -6,7 +6,9 @@ interface BarcodeInputProps {
 
 export default function BarcodeInput({ value, onChange, errorMessage }: BarcodeInputProps) {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 4, width: 300 }}>
+    <div
+      style={{ display: 'flex', flexDirection: 'column', gap: 4, margin: '0 auto', minWidth: 300 }}
+    >
       <input
         type='text'
         value={value}
