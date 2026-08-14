@@ -25,7 +25,7 @@ export default function BarcodeInput({ value, onChange, errorMessage }: BarcodeI
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder='바코드 값을 입력하세요'
-          style={{ padding: 8, fontSize: 16, boxSizing: 'border-box', width: '100%' }}
+          style={{ padding: 8, fontSize: 18, boxSizing: 'border-box', width: '100%' }}
         />
         {value && (
           <button
