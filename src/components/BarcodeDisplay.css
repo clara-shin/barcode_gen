@@ -1,0 +1,24 @@
+.barcode-display {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.barcode-svg {
+  height: 120px;
+  display: block;
+  width: 100%;
+  min-width: 300px;
+}
+
+@media (min-width: 1024px) {
+  .barcode-display {
+    width: 50%;
+  }
+
+  .barcode-display p {
+    font-size: 24px;
+  }
+  .barcode-svg {
+    height: 160px;
+  }
+}

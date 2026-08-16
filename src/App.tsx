@@ -14,7 +14,7 @@ export default function App() {
 
   return (
     <div style={{ padding: '40px' }}>
-      <h1 style={{ fontSize: 24, marginBottom: 16 }}>바코드 / QR코드 생성기</h1>
+      <h1 style={{ fontSize: 24, marginBottom: 16 }}>🔖 바코드 / QR코드 생성기 🔖</h1>
 
       <BarcodeInput
         value={value}

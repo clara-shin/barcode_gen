@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import './BarcodeInput.css';
 
 interface BarcodeInputProps {
   value: string;
@@ -15,9 +16,7 @@ export default function BarcodeInput({ value, onChange, errorMessage }: BarcodeI
   };
 
   return (
-    <div
-      style={{ display: 'flex', flexDirection: 'column', gap: 4, margin: '0 auto', minWidth: 300 }}
-    >
+    <div className='barcode-input-wrapper'>
       <div style={{ position: 'relative' }}>
         <input
           ref={inputRef}
@@ -25,25 +24,10 @@ export default function BarcodeInput({ value, onChange, errorMessage }: BarcodeI
           value={value}
           onChange={(e) => onChange(e.target.value)}
           placeholder='바코드 값을 입력하세요'
-          style={{ padding: 8, fontSize: 18, boxSizing: 'border-box', width: '100%' }}
+          className='barcode-input'
         />
         {value && (
-          <button
-            onClick={handleClear}
-            style={{
-              position: 'absolute',
-              right: 8,
-              top: '50%',
-              transform: 'translateY(-50%)',
-              background: 'none',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 24,
-              color: '#9ca3af',
-              padding: 0,
-              lineHeight: 1,
-            }}
-          >
+          <button onClick={handleClear} className='clear-button'>
             ✕
           </button>
         )}
