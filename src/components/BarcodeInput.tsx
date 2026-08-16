@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { BsFillXCircleFill } from 'react-icons/bs';
 import './BarcodeInput.css';
 
 interface BarcodeInputProps {
@@ -28,7 +29,7 @@ export default function BarcodeInput({ value, onChange, errorMessage }: BarcodeI
         />
         {value && (
           <button onClick={handleClear} className='clear-button'>
-            ✕
+            <BsFillXCircleFill />
           </button>
         )}
       </div>

@@ -25,7 +25,13 @@
   color: #9ca3af;
   padding: 0;
   line-height: 1;
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clear-button svg {
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width: 1024px) {
@@ -44,7 +50,8 @@
     border: 2px solid #e5e7eb;
   }
 
-  .clear-button {
-    font-size: 35px;
+  .clear-button svg {
+    width: 35px;
+    height: 35px;
   }
 }
